@@ -1,3 +1,3 @@
 # G-Meet Application
 
-Design Link : <https://www.figma.com/file/m09qvqP3brEjCXUYN3Q2B3/Video-Call-Apps-(Community)?type=design&node-id=49%3A910&mode=design&t=O0I4wCX4kdaCqCVg-1>
+Design Link : [Click Here](https://www.figma.com/file/Eu1CClxThtLvC6YVUbs0TA/G-Meet?type=design&node-id=20%3A129&mode=design&t=dRQi8D05LaPpPRAY-1)
