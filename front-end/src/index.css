@@ -1,0 +1,50 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.light-mode {
+
+  /* primary and secondary colors */
+  --primary-clr: #ffffff;
+  --secondary-clr: #dfebff;
+
+  /* accent colors */
+  --accent-warning-clr: #eb5757;
+  --accent-inactive-clr: #ff4949;
+  --accent-active-clr: #0060ff;
+
+  /* primary and secondary text color */
+  --primary-text-clr: #373131;
+  --secondary-text-clr: #acacac;
+}
+
+
+.dark-mode {
+
+  /* primary and secondary color */
+  --primary-clr: #1c1f2e;
+  --secondary-clr: #1e2757;
+
+  /* accent colors */
+  --accent-warning-clr: #ff4949;
+  --accent-inactive-clr: #ff4949;
+  --accent-active-clr: #1e2757;
+
+  /* primary and secondary text color */
+  --primary-text-clr: #e2e2e2;
+  --secondary-text-clr: #9f9f9f;
+}
+
+:root {
+  --white: #fff ;
+  --black: #000;
+  
+  /* font family */
+  --primary-ff: Inter;
+
+
+}
