@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import IconToggleButton from '../../components/Buttons/IconToggleButton';
+import IconOnlyButton from '../../components/Buttons/IconOnlyButton';
 
 import MIPaperClip from '../../components/Icons/MIPaperClip';
 import MISend from '../../components/Icons/MISend';
@@ -10,17 +10,19 @@ const TextBox = () => {
   return (
     <Wrapper>
       <div className='text-input-wrapper'>
-        <IconToggleButton
-          type='secondary'
+        <IconOnlyButton
+          size='large'
           mode='normal'
           icon={<MIPaperClip />}
+          onClick={()=>{}}
         />
         <input type="text" placeholder='Type Something...' />
-        <IconToggleButton
-          type='primary'
+        <IconOnlyButton
+          size='large'
           mode='normal'
           icon={<MISend />}
           backgroundColor="var(--accent-blue-clr)"
+          onClick={()=>{}}
         />
       </div>
     </Wrapper>

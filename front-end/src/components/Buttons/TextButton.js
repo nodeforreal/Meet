@@ -17,22 +17,26 @@ const TextButton = (props) => {
   )
 }
 
-const Wrapper = styled.button`
+
+const color = {
+  "primary" : "var(--white)"
+}
+
+const Wrapper = styled.button.attrs((props)=>({
+  $backgroundColor : props.$backgroundColor || 'var(--secondary-clr)',
+  $color: color[props.$type] || "var(--white)"
+}))`
   height: 60px;
   
   width: fit-content;
   padding: 0 2.30rem;
   border-radius: 4.5625rem;
-  background-color: ${({ $backgroundColor }) => {
-    return $backgroundColor || 'var(--secondary-clr)'
-  }};
+  background-color: ${({ $backgroundColor }) => $backgroundColor };
 
   display: grid;
   place-content: center;
 
-  color: ${({ $color, $type }) => {
-    return $color || ($type === "primary") ? "var(--white)" : "var(--white)"
-  }};
+  color: ${({ $color }) => $color };
 
   font-family: var(--primary-ff);
   font-size: 1.125rem;

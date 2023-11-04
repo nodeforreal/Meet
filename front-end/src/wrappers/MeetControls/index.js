@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import IconToggleButton from "../../components/Buttons/IconToggleButton";
+import IconOnlyButton from "../../components/Buttons/IconOnlyButton";
 import TextButton from "../../components/Buttons/TextButton";
 
 import MIMicOn from '../../components/Icons/MIMicOn';
@@ -32,64 +32,94 @@ const MeetControls = () => {
   return (
     <Wrapper>
       {/* mic */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIMicOn strokeColor="var(--white)" />}
-        offIcon={<MIMicOff strokeColor="var(--white)" />}
         control={true}
-        backgroundColor={"var(--accent-blue-clr)"}
+        on={{
+          icon: <MIMicOn strokeColor="var(--white)" />,
+          backgroundColor: "var(--accent-blue-clr)"
+        }}
+        off={{
+          icon: <MIMicOff strokeColor="var(--white)" />,
+          backgroundColor: "var(--accent-blue-clr)"
+        }}
       />
 
       {/* camera */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIVideoCameraOn strokeColor="var(--white)" />}
-        offIcon={<MIVideoCameraOff strokeColor="var(--white)" />}
         control={true}
-        backgroundColor={"var(--accent-blue-clr)"}
+        on={{
+          icon: <MIVideoCameraOn strokeColor="var(--white)" />,
+          backgroundColor: "var(--accent-blue-clr)"
+        }}
+        off={{
+          icon: <MIVideoCameraOff strokeColor="var(--white)" />,
+          backgroundColor: "var(--accent-blue-clr)"
+        }}
       />
 
       {/* screen share */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIScreenShare strokeColor="var(--accent-blue-clr)" />}
-        offIcon={<MIScreenShare strokeColor="var(--accent-blue-clr)" />}
         control={true}
-        backgroundColor={"var(--secondary-clr)"}
+        on={{
+          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
+        off={{
+          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
       />
 
       {/* record */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIRecording strokeColor="var(--record-icon-stroke-clr)" />}
-        offIcon={<MIRecording strokeColor="var(--record-icon-stroke-clr)" />}
         control={true}
-        backgroundColor={"var(--accent-light-red-clr)"}
+        on={{
+          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)" />,
+          backgroundColor: "var(--accent-light-red-clr)"
+        }}
+        off={{
+          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)" />,
+          backgroundColor: "var(--accent-light-red-clr)"
+        }}
       />
 
       {/* message */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIMessage strokeColor="var(--accent-blue-clr)" />}
-        offIcon={<MIMessage strokeColor="var(--accent-blue-clr)" />}
         control={true}
-        backgroundColor={"var(--secondary-clr)"}
+        on={{
+          icon: <MIMessage strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
+        off={{
+          icon: <MIMessage strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
       />
 
       {/* settings */}
-      <IconToggleButton
-        type='primary'
+      <IconOnlyButton
+        size='large'
         mode="switch"
-        onIcon={<MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />}
-        offIcon={<MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />}
         control={true}
-        backgroundColor={"var(--secondary-clr)"}
         onClick={handleTheme}
+        on={{
+          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
+        off={{
+          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />,
+          backgroundColor: "var(--secondary-clr)"
+        }}
       />
 
       {/* end call */}

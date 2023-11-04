@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import CircledProfile from '../../components/Profile/CircledProfile';
-import IconToggleButton from '../../components/Buttons/IconToggleButton';
+import IconOnlyButton from '../../components/Buttons/IconOnlyButton';
 
 import sampleImage from '../../assets/images/Card/man-with-headset-video-call.png';
 import MIMicOn from '../../components/Icons/MIMicOn';
@@ -23,18 +23,18 @@ const Participants = () => {
                   <p className='participant-name'>Dianne Russell</p>
                 </div>
                 <div className='action-btns'>
-                  <IconToggleButton
+                  <IconOnlyButton
                     control={true}
                     type="secondary"
-                    mode="switch"
-                    onIcon={<MIMicOn />}
-                    offIcon={<MIMicOff />}
+                    
+                    on={{ icon: <MIMicOn />}}
+                    off={{ icon: <MIMicOff /> }}
                   />
-                  <IconToggleButton
+                  <IconOnlyButton
                     type="secondary"
-                    mode="switch"
-                    onIcon={<MIVideoCameraOn />}
-                    offIcon={<MIVideoCameraOff />}
+                    
+                    on={{ icon: <MIVideoCameraOn />}}
+                    off={{ icon: <MIVideoCameraOff /> }}
                   />
                 </div>
               </ListItemWrapper>
