@@ -1,0 +1,21 @@
+/* utilities - classes */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
