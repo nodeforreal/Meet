@@ -4,9 +4,7 @@ import styled from 'styled-components';
 const CircledCount = ({ text, className }) => {
   return (
     <Wrapper className={className || ''}>
-      <div>
-        {text}
-      </div>
+      <div>{text}</div>
     </Wrapper>
   )
 }
