@@ -7,22 +7,28 @@
 }
 
 .grid-center {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-content: center;
 }
 
 .text-center {
   text-align: center;
 }
 
+.align-center{
+  display: flex;
+  align-items: center;
+}
+
+/* background blur*/
+.bg-black-blur-30{
+  background: rgba(0, 0, 0, 0.30);
+  backdrop-filter: blur(4px);
+}
+
+/* text */
 .text-ellipsis{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-
-/* background */
-.bg-blur-30{
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(4px);
 }

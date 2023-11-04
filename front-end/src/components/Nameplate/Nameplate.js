@@ -5,7 +5,7 @@ const Nameplate = ({ size, label, className }) => {
   return (
     <Wrapper 
       $size={size} 
-      className={`text-ellipsis bg-blur-30 ${className || ""}`}
+      className={`text-ellipsis bg-black-blur-30 ${className || ""}`}
     >
       {label}
     </Wrapper>
