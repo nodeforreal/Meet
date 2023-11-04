@@ -23,6 +23,7 @@
   /* other colors */
   --section-border-clr: rgba(217, 217, 217, 0.29);
   --sidebar-section-border-clr: #fdfbfb;
+  --sidebar-border-clr: #EAE9E9;
   --record-icon-stroke-clr: #ff4949;
   --meet-area-bg-clr: #f1f0f0;
 
@@ -46,6 +47,7 @@
   /* other colors */
   --section-border-clr: rgba(51, 51, 51, 0.29);
   --sidebar-section-border-clr: #101010;
+  --sidebar-border-clr: #1C1F2E;
   --record-icon-stroke-clr: #ffffff;
   --meet-area-bg-clr: #1c1f2e;
 

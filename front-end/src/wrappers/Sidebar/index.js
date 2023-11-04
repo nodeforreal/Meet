@@ -58,7 +58,7 @@ const Sidebar = () => {
 
 const Wrapper = styled.section`
   background-color: var(--accent-light-grey-clr);
-  border-left: 1.5px solid var(--section-border-clr);
+  border-left: 1.5px solid var(--sidebar-border-clr);
 
   display: grid;
   grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);

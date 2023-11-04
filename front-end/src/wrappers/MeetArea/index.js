@@ -38,19 +38,20 @@ const Wrapper = styled.section`
       display: block;
 
       overflow-y: auto;
+      scroll-behavior: smooth;
 
       &::-webkit-scrollbar{
           width: 0rem;
       }
-    /* 
-      &::-webkit-scrollbar-thumb{
-        background-color: var(--accent-light-grey-clr);
+    
+      /*&::-webkit-scrollbar-thumb{
+        background-color: var(--accent-blue-clr);
         border-radius: 1rem;
       }
 
       &::-webkit-scrollbar-track{
         border-radius: 1rem;
-        background: #DEE1E7;
+        background: var(--secondary-clr);
       } */
     `
   }}

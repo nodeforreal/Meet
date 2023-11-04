@@ -106,6 +106,7 @@ const MeetControls = () => {
 
 const Wrapper = styled.section`
   background-color: var(--primary-clr);
+  border-top: 1.5px solid var(--section-border-clr);
 
   display: flex;
   column-gap: 1.25rem;
