@@ -3,7 +3,10 @@ import styled from 'styled-components';
 
 const Nameplate = ({ size, label, className }) => {
   return (
-    <Wrapper $size={size} className={`text-ellipsis ${className || ""}`}>
+    <Wrapper 
+      $size={size} 
+      className={`text-ellipsis bg-blur-30 ${className || ""}`}
+    >
       {label}
     </Wrapper>
   )
@@ -26,8 +29,6 @@ const Wrapper = styled.div.attrs((props) => ({
 }))`
   padding: ${(props) => props.$padding};
   border-radius: 5.61456rem;
-  background: rgba(0, 0, 0, 0.30);
-  backdrop-filter: blur(4px);
 
   color: var(--white);
   font-family: var(--primary-ff);

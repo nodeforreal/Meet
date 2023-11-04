@@ -49,7 +49,7 @@ const buttonSize = {
 
 const Wrapper = styled.button.attrs((props) => ({
   $size: buttonSize[props.$size] || props.$size,
-  $backgroundColor: props.$backgroundColor || 'transparent'
+  $backgroundColor: props.$backgroundColor || null
 }))`
   width: ${({ $size }) => $size};
   height: ${({ $size }) => $size};

@@ -24,15 +24,16 @@ const Participants = () => {
                 </div>
                 <div className='action-btns'>
                   <IconOnlyButton
+                    size="fit-content"
+                    mode="switch"
                     control={true}
-                    type="secondary"
-                    
                     on={{ icon: <MIMicOn />}}
                     off={{ icon: <MIMicOff /> }}
                   />
                   <IconOnlyButton
-                    type="secondary"
-                    
+                    size="fit-content"
+                    mode="switch"
+                    control={false}
                     on={{ icon: <MIVideoCameraOn />}}
                     off={{ icon: <MIVideoCameraOff /> }}
                   />
