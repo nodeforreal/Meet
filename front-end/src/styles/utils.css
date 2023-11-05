@@ -32,3 +32,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
+/* transition */
+.transition-all-3s{
+  transition: all .3s ease-in-out;
+}
