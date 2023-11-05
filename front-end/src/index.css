@@ -3,5 +3,5 @@
 
 /* css imports */
 @import url("./styles/reset.css");
-@import url("./styles/variable.css");
+@import url("./styles/variables.css");
 @import url("./styles/utils.css");

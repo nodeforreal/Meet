@@ -1,0 +1,65 @@
+
+/* variables */
+
+:root {
+  --white: #fff;
+  --black: #000;
+
+  /* font family */
+  --primary-ff: Inter;
+
+  /* layout height and width*/
+  --meet-info-bar-height: 140px;
+  --sidebar-width: 420px;
+  --footer-bar-height: 140px;
+  --text-box-height: 140px;
+  --sidebar-section-bar-height: 4.375rem;
+}
+
+.light-theme {
+  /* primary and secondary colors */
+  --primary-clr: #ffffff;
+  --secondary-clr: #dfebff;
+
+  /* accent colors */
+  --accent-red-clr: #ff4949;
+  --accent-light-red-clr: #ffc8c8;
+  --accent-blue-clr: #0060ff;
+  --accent-grey-clr: #f6f6f6;
+  --accent-light-grey-clr: #f6f6f6;
+
+  /* other colors */
+  --section-border-clr: rgba(217, 217, 217, 0.29);
+  --sidebar-section-border-clr: #fdfbfb;
+  --sidebar-border-clr: #EAE9E9;
+  --record-icon-stroke-clr: #ff4949;
+  --meet-area-bg-clr: #f1f0f0;
+
+  /* primary and secondary text color */
+  --primary-text-clr: #373131;
+  --secondary-text-clr: #acacac;
+}
+
+.dark-theme {
+  /* primary and secondary color */
+  --primary-clr: #161929;
+  --secondary-clr: #1e2757;
+
+  /* accent colors */
+  --accent-red-clr: #ff4949;
+  --accent-light-red-clr: #ff4949;
+  --accent-blue-clr: #1a71ff;
+  --accent-grey-clr: #242737;
+  --accent-light-grey-clr: #242737;
+
+  /* other colors */
+  --section-border-clr: rgba(51, 51, 51, 0.29);
+  --sidebar-section-border-clr: #101010;
+  --sidebar-border-clr: #1C1F2E;
+  --record-icon-stroke-clr: #ffffff;
+  --meet-area-bg-clr: #1c1f2e;
+
+  /* primary and secondary text color */
+  --primary-text-clr: #e2e2e2;
+  --secondary-text-clr: #9f9f9f;
+}
