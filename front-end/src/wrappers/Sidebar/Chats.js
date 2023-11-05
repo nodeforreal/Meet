@@ -40,7 +40,7 @@ const chatData = [
 
 
 
-const Chats = () => {
+const Chats = ({ layout }) => {
   const [chat, setChat] = useState([])
   const [index, setIndex] = useState(0)
 
@@ -74,33 +74,38 @@ const Chats = () => {
 
 
   return (
-    <Wrapper>
-      {
-        chat.map((data, index) => {
-          const { profileImage, userName, message, time, messageOnly, showTime } = data
-          return (
-            <MessageWrapper $messageOnly={messageOnly} key={`${data.id}${index}`}>
-              {messageOnly ? <CircledProfile image={profileImage} /> : <div></div>}
-              <article className='message-template'>
-                {messageOnly && <p className='user-name'>{userName}</p>}
-                <p className='text'>{message}</p>
-              </article>
-              {showTime ? <span className='time'>{time}</span> : <span></span>}
-            </MessageWrapper>
-          )
-        })
-      }
-      <div className='flex-center spacer-ellipsis'>
-        <MILoaderEllipsis />
+    <Wrapper $layout={layout} className='transition-all-3s'>
+      <div className='messages-wrapper'>
+        {
+          chat.map((data, index) => {
+            const { profileImage, userName, message, time, messageOnly, showTime } = data
+            return (
+              <MessageWrapper $messageOnly={messageOnly} key={`${data.id}${index}`}>
+                {messageOnly ? <CircledProfile image={profileImage} /> : <div></div>}
+                <article className='message-template'>
+                  {messageOnly && <p className='user-name'>{userName}</p>}
+                  <p className='text'>{message}</p>
+                </article>
+                {showTime ? <span className='time'>{time}</span> : <span></span>}
+              </MessageWrapper>
+            )
+          })
+        }
+        <div className='flex-center spacer-ellipsis'>
+          <MILoaderEllipsis />
+        </div>
       </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.section`
-  padding: 1.75rem 1.5rem;
-  height: 100%;
-  overflow-y: scroll; 
+  height: ${({ $layout }) => $layout.chats};
+  overflow-y: scroll;
+
+  .messages-wrapper{
+    margin:  1.75rem 1.5rem;
+  }
   
   &::-webkit-scrollbar{
     display: none;

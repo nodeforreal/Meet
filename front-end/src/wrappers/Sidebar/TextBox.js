@@ -14,7 +14,7 @@ const TextBox = () => {
           size='large'
           mode='normal'
           icon={<MIPaperClip />}
-          onClick={()=>{}}
+          onClick={() => { }}
         />
         <input type="text" placeholder='Type Something...' />
         <IconOnlyButton
@@ -22,7 +22,7 @@ const TextBox = () => {
           mode='normal'
           icon={<MISend />}
           backgroundColor="var(--accent-blue-clr)"
-          onClick={()=>{}}
+          onClick={() => { }}
         />
       </div>
     </Wrapper>

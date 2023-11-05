@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import styled from 'styled-components';
 
 import SidebarMenu from './SidebarMenu';
@@ -15,15 +15,57 @@ import MIAddParticipant from '../../components/Icons/MIAddParticipant';
 const Sidebar = () => {
 
   const [selectedChatTab, setSelectedChatTab] = useState("GROUP")
+  const [sidebarLayout, setSidebarLayout] = useState({ participants: true, chats: true })
 
+  // tabs
   const handleChatTabs = ({ type }) => {
     setSelectedChatTab(type)
   }
 
+  // collapse button
+  const handleCollapseMenu = ({ type }) => {
+    if (type === "PARTICIPANTS") {
+      setSidebarLayout({ ...sidebarLayout, participants: !sidebarLayout.participants })
+    }
+    if (type === "CHATS") {
+      setSidebarLayout({ ...sidebarLayout, chats: !sidebarLayout.chats })
+    }
+  }
+
+  const getSectionHeights = (sidebarLayout) => {
+    const height = {
+      participantsWrapper: '50%',
+      chatsWrapper: '50%',
+      participants: 'calc(100% - var(--sidebar-section-bar-height))',
+      chats: "calc(100% - var(--sidebar-section-bar-height) - var(--text-box-height))",
+    }
+
+    if (sidebarLayout.participants) {
+      height.participantsWrapper = sidebarLayout.chats ? "50%" : "calc(100% - var(--sidebar-section-bar-height))"
+      height.participants = 'calc(100% - var(--sidebar-section-bar-height))'
+    } else {
+      height.participantsWrapper = "var(--sidebar-section-bar-height)"
+      height.participants = '0'
+    }
+
+    if (sidebarLayout.chats) {
+      height.chatsWrapper = sidebarLayout.participants ? "50%" : "calc(100% - var(--sidebar-section-bar-height))"
+      height.chats = "calc(100% - var(--sidebar-section-bar-height) - var(--text-box-height))"
+    } else {
+      height.chatsWrapper = 'var(--sidebar-section-bar-height)'
+      height.chats = "0"
+    }
+
+    return height
+  }
+
+  const layout = useMemo(() => {
+    return getSectionHeights(sidebarLayout)
+  }, [sidebarLayout])
 
   return (
-    <Wrapper id="app-column-two">
-      <div className='participants-section'>
+    <Wrapper id="app-column-two" $layout={layout}>
+      <div className='participants-section transition-all-3s'>
         <SidebarMenu
           label="Participants"
           actionBtn={
@@ -33,22 +75,22 @@ const Sidebar = () => {
               />}
             />
           }
+          handleCollapseMenu={() => handleCollapseMenu({ type: "PARTICIPANTS" })}
         />
-        <Participants />
+        <Participants layout={layout} />
       </div>
-      <div className='chat-section'>
-        <div className='sidebar-messages-wrapper'>
-          <SidebarMenu
-            label="Chats"
-            actionBtn={
-              <ButtonTabs
-                selectedTab={selectedChatTab}
-                buttonList={['Group', 'Personal']}
-                handleTab={handleChatTabs}
-              />}
-          />
-          <Chats />
-        </div>
+      <div className='chat-section transition-all-3s'>
+        <SidebarMenu
+          label="Chats"
+          actionBtn={
+            <ButtonTabs
+              selectedTab={selectedChatTab}
+              buttonList={['Group', 'Personal']}
+              handleTab={handleChatTabs}
+            />}
+          handleCollapseMenu={() => handleCollapseMenu({ type: "CHATS" })}
+        />
+        <Chats layout={layout} />
         <TextBox />
       </div>
     </Wrapper>
@@ -60,22 +102,17 @@ const Wrapper = styled.section`
   background-color: var(--accent-light-grey-clr);
   border-left: 1.5px solid var(--sidebar-border-clr);
 
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  display: flex;
+  flex-direction: column;
 
   .participants-section{
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
+    height: ${({ $layout }) => $layout.participantsWrapper};
+    overflow: hidden;
   }
 
   .chat-section{
-    display: grid;
-    grid-template-rows: minmax(0, 1fr) auto;
-  }
-
-  .sidebar-messages-wrapper{
-    display: grid;
-    grid-template-rows: auto minmax(0, 1fr);
+    height: ${({ $layout }) => $layout.chatsWrapper};
+    overflow: hidden;
   }
 `
 

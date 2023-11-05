@@ -10,9 +10,9 @@ import MIMicOff from '../../components/Icons/MIMicOff';
 import MIVideoCameraOn from '../../components/Icons/MIVideoCameraOn';
 import MIVideoCameraOff from '../../components/Icons/MIVideoCameraOff';
 
-const Participants = () => {
+const Participants = ({ layout }) => {
   return (
-    <Wrapper>
+    <Wrapper $layout={layout} className='transition-all-3s'>
       <div className='scroll-wrapper'>
         {
           Array.from({ length: 8 }).map((data, index) => {
@@ -49,6 +49,7 @@ const Participants = () => {
 
 const Wrapper = styled.section`
   padding: 1.87rem 1.70rem ;
+  height: ${({ $layout }) => $layout.participants};
 
   .scroll-wrapper{
     height: 100%;

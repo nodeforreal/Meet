@@ -3,13 +3,13 @@ import styled from 'styled-components';
 
 import MIUpArrow from '../../components/Icons/MIUpArrow';
 
-const SidebarMenu = ({ label, actionBtn }) => {
+const SidebarMenu = ({ label, actionBtn, handleCollapseMenu }) => {
   return (
     <Wrapper>
       <div className='label'>{label}</div>
       <div className='action-btn-wrapper'>
         {actionBtn}
-        <button className='collapse-btn'>
+        <button className='collapse-btn' onClick={handleCollapseMenu}>
           <MIUpArrow strokeColor="var(--accent-blue-clr)" />
         </button>
       </div>
@@ -18,7 +18,8 @@ const SidebarMenu = ({ label, actionBtn }) => {
 }
 
 const Wrapper = styled.div`
-  padding: 0.75rem  1.36rem 0.75rem 2rem;
+  height: var(--sidebar-section-bar-height);
+  padding: 0 1.36rem 0 2rem;
   border-bottom: solid 1px var(--sidebar-section-border-clr);
   background-color: var(--primary-clr);
   
