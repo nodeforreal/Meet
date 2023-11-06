@@ -6,12 +6,12 @@ import IconOnlyButton from '../../components/Buttons/IconOnlyButton';
 import MIPaperClip from '../../components/Icons/MIPaperClip';
 import MISend from '../../components/Icons/MISend';
 
-const TextBox = () => {
+const TextBox = ({ layout }) => {
   return (
-    <Wrapper>
+    <Wrapper $layout={layout} >
       <div className='text-input-wrapper'>
         <IconOnlyButton
-          size='large'
+          size='medium'
           mode='normal'
           icon={<MIPaperClip />}
           onClick={() => { }}
@@ -30,13 +30,17 @@ const TextBox = () => {
 }
 
 const Wrapper = styled.section`
-  height: var(--text-box-height);
+  height: ${({ $layout }) => $layout.textbox};
   background-color: var(--primary-clr);
   border-top: 1.5px solid var(--section-border-clr);
 
+  overflow: hidden;
+  
   display: grid;
   place-content: center;
-
+  
+  transition: height .3s ease-in-out;
+  
   .text-input-wrapper{
     padding: 0.30rem 0.38rem 0.30rem 1rem;
     border-radius: 5.5rem;
