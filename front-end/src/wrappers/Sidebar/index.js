@@ -38,6 +38,7 @@ const Sidebar = () => {
       chatsWrapper: '50%',
       participants: 'calc(100% - var(--sidebar-section-bar-height))',
       chats: "calc(100% - var(--sidebar-section-bar-height) - var(--text-box-height))",
+      textbox: 'var(--text-box-height)'
     }
 
     if (sidebarLayout.participants) {
@@ -51,9 +52,12 @@ const Sidebar = () => {
     if (sidebarLayout.chats) {
       height.chatsWrapper = sidebarLayout.participants ? "50%" : "calc(100% - var(--sidebar-section-bar-height))"
       height.chats = "calc(100% - var(--sidebar-section-bar-height) - var(--text-box-height))"
+      height.textbox = 'var(--text-box-height)'
+
     } else {
       height.chatsWrapper = 'var(--sidebar-section-bar-height)'
       height.chats = "0"
+      height.textbox = '0'
     }
 
     return height
@@ -91,7 +95,7 @@ const Sidebar = () => {
           handleCollapseMenu={() => handleCollapseMenu({ type: "CHATS" })}
         />
         <Chats layout={layout} />
-        <TextBox />
+        <TextBox layout={layout} />
       </div>
     </Wrapper>
   )
