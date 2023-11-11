@@ -32,7 +32,7 @@ const TextBox = ({ layout }) => {
 const Wrapper = styled.section`
   height: ${({ $layout }) => $layout.textbox};
   background-color: var(--primary-clr);
-  border-top: 1.5px solid var(--section-border-clr);
+  border-top: 1px solid var(--section-border-clr);
 
   overflow: hidden;
   
@@ -47,14 +47,14 @@ const Wrapper = styled.section`
     background-color: var(--accent-light-grey-clr);
 
     display: flex;
-    column-gap: 1.30rem;
+    column-gap: 1rem;
     align-items: center;
 
     input{
       width: auto;
       color: var(--primary-text-clr);
       font-family: Inter;
-      font-size: 1rem;
+      font-size: 0.725rem;
       font-style: normal;
       font-weight: 500;
       line-height: 1.38438rem;

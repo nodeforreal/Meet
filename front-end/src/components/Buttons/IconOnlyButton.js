@@ -42,8 +42,8 @@ const IconOnlyButton = (props) => {
 }
 
 const buttonSize = {
-  "large" : "3.125rem",
-  "medium" : "2.50rem",
+  "large" : "2.125rem",
+  "medium" : "1.625rem",
   "small" : ""
 }
 

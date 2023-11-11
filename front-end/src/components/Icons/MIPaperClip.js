@@ -1,9 +1,10 @@
 const MIPaperClip = ({ strokeColor }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width={30}
-    height={30}
+    width={20}
+    height={20}
     fill="none"
+    viewBox="0 0 26 30"
   >
     <path
       stroke={strokeColor ? strokeColor : "#8D8F98"}

@@ -14,13 +14,13 @@ const Nameplate = ({ size, label, className }) => {
 
 
 const padding = {
-  "large" : "0.51rem 1.83rem",
-  "medium" : "0.34rem 1.24rem"
+  "large" : "0.5rem 1.25rem",
+  "medium" : "0.375rem 0.875rem"
 }
 
 const fontSize = {
-  "large" : "1.25rem",
-  "medium" : "1rem"
+  "large" : "0.695rem",
+  "medium" : "0.575rem"
 }
 
 const Wrapper = styled.div.attrs((props) => ({
@@ -28,13 +28,14 @@ const Wrapper = styled.div.attrs((props) => ({
   $fontSize: fontSize[props.$size] || '1rem'
 }))`
   padding: ${(props) => props.$padding};
-  border-radius: 5.61456rem;
+  border-radius: 6rem;
 
   color: var(--white);
   font-family: var(--primary-ff);
   font-size:  ${(props) => props.$fontSize};
   font-style: normal;
   font-weight: 500;
+  line-height: 100%;
 `
 
 export default Nameplate;

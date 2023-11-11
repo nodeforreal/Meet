@@ -20,7 +20,7 @@ const Participants = ({ layout }) => {
               <ListItemWrapper key={index}>
                 <div className='participant-info'>
                   <CircledProfile image={sampleImage} alt="me" />
-                  <p className='participant-name'>Dianne Russell</p>
+                  <p className='participant-name text-ellipsis'>Dianne Russell</p>
                 </div>
                 <div className='action-btns'>
                   <IconOnlyButton
@@ -33,7 +33,7 @@ const Participants = ({ layout }) => {
                   <IconOnlyButton
                     size="fit-content"
                     mode="switch"
-                    control={false}
+                    control={true}
                     on={{ icon: <MIVideoCameraOn />}}
                     off={{ icon: <MIVideoCameraOff /> }}
                   />
@@ -48,22 +48,22 @@ const Participants = ({ layout }) => {
 }
 
 const Wrapper = styled.section`
-  padding: 1.87rem 1.70rem ;
+  padding: 1.25rem 1.125rem ;
   height: ${({ $layout }) => $layout.participants};
 
   .scroll-wrapper{
     height: 100%;
-    padding-right: 1.30rem;
+    padding-right: 0.875rem;
 
     display: flex;
     flex-direction: column;
-    row-gap: 0.94rem;
+    row-gap: 0.625rem;
     
     overflow-y: auto;
     scroll-behavior: smooth;
 
     &::-webkit-scrollbar{
-      width: 0.1875rem;
+      width: 0.125rem;
     }
 
     &::-webkit-scrollbar-track{
@@ -79,33 +79,32 @@ const Wrapper = styled.section`
 `
 
 const ListItemWrapper = styled.div`
-  padding: 0.375rem 1rem 0.375rem 0.5rem;
+  padding: 0.25rem 0.625rem 0.25rem 0.25rem;
   background-color: var(--primary-clr);
-  border-radius: 1.96875rem;
+  border-radius: 2rem;
 
   display: flex;
-  column-gap: 1rem;
+  column-gap: 0.65rem;
   justify-content: space-between;
   align-items: center;
 
   .participant-info{
     display: flex;
     align-items: center;
-    column-gap: 1rem;
+    column-gap: 0.65rem;
   }
 
   .action-btns{
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.65rem;
   }
 
   .participant-name{
     color: var(--primary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 1rem;
+    font-size: 0.625rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.04169rem;
   }
 `
 

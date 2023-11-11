@@ -18,7 +18,7 @@ const Wrapper = styled.article`
     margin-bottom: 0.62rem;
     color: var(--primary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 24px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -31,7 +31,7 @@ const Wrapper = styled.article`
   p{
     color: var(--secondary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 14px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

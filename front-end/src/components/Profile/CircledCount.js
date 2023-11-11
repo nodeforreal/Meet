@@ -10,9 +10,9 @@ const CircledCount = ({ text, className }) => {
 }
 
 const Wrapper = styled.div`
-  width: 3.4375rem;
-  height: 3.4375rem;
-  padding: 0.1875rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.125rem;
   border-radius: 100%;
   background-color: var(--primary-clr);
 
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 
     color: var(--accent-blue-clr);
     font-family: var(--primary-ff);
-    font-size: 1rem;
+    font-size: .6rem;
     font-style: normal;
     font-weight: 600;
     line-height: 1.375rem;

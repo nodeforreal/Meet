@@ -19,7 +19,7 @@ const SidebarMenu = ({ label, actionBtn, handleCollapseMenu }) => {
 
 const Wrapper = styled.div`
   height: var(--sidebar-section-bar-height);
-  padding: 0 1.36rem 0 2rem;
+  padding: 0 0.875rem 0 1.375rem;
   border-bottom: solid 1px var(--sidebar-section-border-clr);
   background-color: var(--primary-clr);
   
@@ -30,17 +30,21 @@ const Wrapper = styled.div`
   .label{
     color: var(--primary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 1.125rem;
+    font-size: 0.725rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 2.04169rem;
+    line-height: 1rem;
   }
 
   .action-btn-wrapper{
     display: flex;
-    column-gap: 1.06rem;
+    align-items: center;
+    column-gap: 0.625rem;
   }
 
+  .collapse-btn{
+    height: fit-content;
+  }
 
 `
 export default SidebarMenu;
