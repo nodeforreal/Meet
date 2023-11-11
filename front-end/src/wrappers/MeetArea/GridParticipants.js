@@ -31,11 +31,11 @@ const GridParticipants = (props) => {
                   control={index}
                   onClick={() => {}}
                   on={{
-                    icon: <MIMicOn strokeColor="var(--white)" />,
+                    icon: <MIMicOn strokeColor="var(--white)" size={16} />,
                     backgroundColor: 'var(--accent-blue-clr)'
                   }}
                   off={{
-                    icon: <MIMicOff strokeColor="var(--white)" />,
+                    icon: <MIMicOff strokeColor="var(--white)" size={16} />,
                     backgroundColor: 'var(--accent-red-clr)'
                   }}
                 />
@@ -49,7 +49,6 @@ const GridParticipants = (props) => {
 }
 
 const Wrapper = styled.section`
-  border-radius: 0.69219rem;
   
   ${({ $isAnyParticipantPinned }) => {
     return $isAnyParticipantPinned &&
@@ -93,8 +92,8 @@ const Wrapper = styled.section`
     }
 
     video{
-      width: 18.55063rem;
-      height: 11.33069rem;
+      width: 12.25rem;
+      height: 7.5rem;
       
       border-radius: 0.69219rem;
       object-fit: cover;
@@ -113,7 +112,7 @@ const Wrapper = styled.section`
     return $isAnyParticipantPinned &&
       css`
         &::-webkit-scrollbar{
-          height: 0.25rem;
+          height: 0.15625rem;
         }
 
         &::-webkit-scrollbar-thumb{

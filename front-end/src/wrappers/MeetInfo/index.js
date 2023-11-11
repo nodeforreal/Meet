@@ -27,7 +27,7 @@ const MeetInfo = () => {
 }
 
 const Wrapper = styled.section`
-  border-bottom: 1.5px solid var(--section-border-clr);
+  border-bottom: 1px solid var(--section-border-clr);
   background: var(--primary-clr);
   
   display: grid;

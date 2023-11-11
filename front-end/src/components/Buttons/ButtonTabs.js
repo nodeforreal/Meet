@@ -21,8 +21,8 @@ const ButtonTabs = ({ buttonList, handleTab, selectedTab }) => {
 }
 
 const Wrapper = styled.div`
-  padding: 0.25rem 0.30rem;
-  border-radius: 4.4375rem;
+  padding: 0.25rem 0.25rem;
+  border-radius: 4rem;
 
   background-color: var(--secondary-clr);
 
@@ -30,18 +30,17 @@ const Wrapper = styled.div`
   /* column-gap: 0.625rem; */
 
   button{
-    padding: 0.625rem 2.5rem;
-    border-radius: 3.8125rem;
+    padding: 0.5rem 1.625rem;
+    border-radius: 3rem;
 
     display: grid;
     place-content: center;
 
     color: var(--accent-blue-clr);
     font-family: var(--primary-ff);
-    font-size: 0.875rem;
+    font-size: 0.6rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 1.375rem;
   }
 
   .selected-tab{

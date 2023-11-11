@@ -16,7 +16,7 @@ const Moderator = () => {
           <p className='moderator-text'>Moderator</p>
         </div>
       </div>
-      <button>
+      <button className='moderator-menu-btn'>
         <MIKebab fillColor="#A2A7B4" />
       </button>
     </Wrapper>
@@ -24,38 +24,45 @@ const Moderator = () => {
 }
 
 const Wrapper = styled.div`
-  width: 22.875rem;
-  padding: 0.7rem 2.15rem 0.7rem 1rem;
+  width: 15.125rem;
+  padding: 0.5rem 1.5rem 0.5rem 0.625rem;
   border-radius: 10rem;
   background-color: var(--accent-light-grey-clr);
 
   display: flex;
   justify-content: space-between;
-  column-gap: 1rem;
+  align-items: center;
+  column-gap: 0.625rem;
 
   .moderator-info-wrapper{
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.625rem;
+    align-items: center;
   }
 
   .moderator-name{
     color: var(--primary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 1rem;
+    font-size: .725rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 2.04169rem;
+    line-height: 1.2rem;
   }
   .moderator-text{
     color: #9E9E9E;
     font-family: Inter;
-    font-size: 0.8125rem;
+    font-size: 0.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 0.27863rem; 
+    line-height: normal;
     letter-spacing: 0.02438rem;
   }
 
+  .moderator-menu-btn{
+    height: fit-content;
+    display: grid;
+    place-items: center;
+  }
 `
 
 export default Moderator

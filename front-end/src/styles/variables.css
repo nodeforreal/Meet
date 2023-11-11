@@ -9,11 +9,11 @@
   --primary-ff: Inter;
 
   /* layout height and width*/
-  --meet-info-bar-height: 140px;
-  --sidebar-width: 420px;
-  --footer-bar-height: 140px;
-  --text-box-height: 140px;
-  --sidebar-section-bar-height: 4.375rem;
+  --meet-info-bar-height: 92px;
+  --sidebar-width: 280px;
+  --footer-bar-height: 92px;
+  --text-box-height: 92px;
+  --sidebar-section-bar-height: 48px;
 }
 
 .light-theme {

@@ -3,7 +3,7 @@ import React from 'react'
 const MIScreenShare = ({ strokeColor }) => {
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} fill="none" viewBox='0 0 30 30'>
       <path
         stroke={strokeColor ? strokeColor : "#0060FF"}
         strokeLinecap="round"

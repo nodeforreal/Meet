@@ -1,13 +1,13 @@
 
 const MIRecordingRing = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={30} height={30} fill="none">
-    <circle cx={15} cy={15} r={15.141} fill="#fff" fillOpacity={0.63} />
-    <circle cx={15} cy={15} r={5.743} fill="#EB5757" />
+  <svg xmlns="http://www.w3.org/2000/svg" width="1.25rem" height="1.25rem" fill="none">
+    <circle cx={10} cy={10} r={"0.625rem"} fill="#fff" fillOpacity={0.63} />
+    <circle cx={10} cy={10} r={"0.25rem"} fill="#EB5757" />
     <defs>
       <filter
         id="a"
-        width={30}
-        height={30}
+        width="1.25rem" 
+        height="1.25rem"
         colorInterpolationFilters="sRGB"
         filterUnits="userSpaceOnUse"
       >

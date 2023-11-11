@@ -13,8 +13,8 @@ const MeetLink = () => {
 }
 
 const Wrapper = styled.button`
-  padding: 0.63rem 1.10rem ;
-  border-radius: 7.21rem;
+  padding: 0.625rem 0.875rem ;
+  border-radius: 6rem;
   background-color: var(--secondary-clr) ;
 
   display: flex;
@@ -23,7 +23,7 @@ const Wrapper = styled.button`
 
   color: #0060FF;
   font-family: var(--primary-ff);
-  font-size: 1.04281rem;
+  font-size: .6rem;
   font-style: normal;
   font-weight: 500;
   line-height: normal;

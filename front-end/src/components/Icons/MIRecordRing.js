@@ -2,7 +2,7 @@ import React from 'react'
 
 const MIRecordRing = ({ strokeColor }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox='0 0  28 28' fill="none">
       <path
         stroke={strokeColor ? strokeColor : "#EB5757"}
         strokeLinecap="round"

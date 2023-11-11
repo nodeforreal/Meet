@@ -26,11 +26,11 @@ const Wrapper = styled.button.attrs((props)=>({
   $backgroundColor : props.$backgroundColor || 'var(--secondary-clr)',
   $color: color[props.$type] || "var(--white)"
 }))`
-  height: 60px;
+  height: 40px;
   
   width: fit-content;
-  padding: 0 2.30rem;
-  border-radius: 4.5625rem;
+  padding: 0 1.5rem;
+  border-radius: 4rem;
   background-color: ${({ $backgroundColor }) => $backgroundColor };
 
   display: grid;
@@ -39,7 +39,7 @@ const Wrapper = styled.button.attrs((props)=>({
   color: ${({ $color }) => $color };
 
   font-family: var(--primary-ff);
-  font-size: 1.125rem;
+  font-size: 0.825rem;
   font-style: normal;
   font-weight: 600;
   line-height: 1.375rem;

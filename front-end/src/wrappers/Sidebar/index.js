@@ -104,7 +104,7 @@ const Sidebar = () => {
 
 const Wrapper = styled.section`
   background-color: var(--accent-light-grey-clr);
-  border-left: 1.5px solid var(--sidebar-border-clr);
+  border-left: 1px solid var(--sidebar-border-clr);
 
   display: flex;
   flex-direction: column;

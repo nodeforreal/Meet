@@ -10,12 +10,14 @@ const CircledProfile = ({ image, alt, className }) => {
 }
 
 const Wrapper = styled.div`
-  width: 3.4375rem;
-  height: 3.4375rem;
-  padding: 0.1875rem;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0.125rem;
   border-radius: 100%;
   background-color: var(--primary-clr);
 
+  flex-shrink: 0;
+  
   img{
     width: 100%;
     height: 100%;

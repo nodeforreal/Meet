@@ -101,11 +101,11 @@ const Wrapper = styled.section`
   }
 
   .recording-indicator{
-    padding: .5rem 1.2rem .5rem .5rem;
+    padding: .375rem 0.875rem .375rem .375rem;
     border-radius: 1.60rem;
 
     display: flex;
-    column-gap: 1rem;
+    column-gap: 0.625rem;
     align-items: center;
 
     position: absolute;
@@ -114,7 +114,7 @@ const Wrapper = styled.section`
 
     color: var(--white);
     font-family: var(--primary-ff);
-    font-size: 1.25rem;
+    font-size: 0.7rem;
     font-style: normal;
     font-weight: 500;
   }

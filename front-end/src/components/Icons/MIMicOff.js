@@ -1,12 +1,13 @@
 
-function MIMicOff({ strokeColor }) {
+function MIMicOff({ strokeColor, size }) {
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={24}
-      height={25}
+      width={size || "16"}
+      height={size || "16"}
       fill="none"
+      viewBox="0 0 24 25"
     >
       <path
         stroke={strokeColor ? strokeColor : "#EB5757"}

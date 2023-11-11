@@ -21,15 +21,15 @@ const MeetArea = () => {
 const Wrapper = styled.section`
   height: 100%;
   width: 100%;
-  padding: 1.75rem 1.80rem;
+  padding: 1.125rem 1.25rem;
   background-color: var(--meet-area-bg-clr);
 
   
 
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  grid-template-rows: minmax(0, 1fr) 12.75rem;
-  row-gap: 1.60rem;
+  grid-template-rows: minmax(0, 1fr) 8.5rem;
+  row-gap: 1rem;
 
 
   ${({ $isAnyVideoPinned }) => {
