@@ -24,7 +24,7 @@ const Wrapper = styled.div`
   display: flex;
 
   .avatar{
-    margin-left: -22px;
+    margin-left: -14px;
   }
 `
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-const MIScreenShare = ({ strokeColor }) => {
+const MIScreenShare = ({ strokeColor, size }) => {
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} fill="none" viewBox='0 0 30 30'>
+    <svg xmlns="http://www.w3.org/2000/svg" width={size || 18} height={size || 18} fill="none" viewBox='0 0 28 28'>
       <path
         stroke={strokeColor ? strokeColor : "#0060FF"}
         strokeLinecap="round"
