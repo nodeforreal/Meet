@@ -83,7 +83,7 @@ const Chats = ({ layout }) => {
               <MessageWrapper $messageOnly={messageOnly} key={`${data.id}${index}`}>
                 {messageOnly ? <CircledProfile image={profileImage} /> : <div></div>}
                 <article className='message-template'>
-                  {messageOnly && <p className='user-name'>{userName}</p>}
+                  {messageOnly && <p className='user-name text-ellipsis'>{userName}</p>}
                   <p className='text'>{message}</p>
                 </article>
                 {showTime ? <span className='time'>{time}</span> : <span></span>}
@@ -104,7 +104,7 @@ const Wrapper = styled.section`
   overflow-y: scroll;
 
   .messages-wrapper{
-    margin:  1.75rem 1.5rem;
+    margin:  1.125rem 1rem;
   }
   
   &::-webkit-scrollbar{
@@ -112,20 +112,20 @@ const Wrapper = styled.section`
   }
 
   .spacer-ellipsis{
-    margin-top: 1rem;
+    margin-top: 0.625rem;
     /* margin-bottom: 1.75rem; */
   }
 `
 
 const MessageWrapper = styled.section`
   display: grid;
-  grid-template-columns: 3.4375rem minmax(0, 1fr) 3rem;
-  column-gap: 1.5rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr) 2.35rem;
+  column-gap: 1rem;
 
   .message-template{
     margin-bottom: 0.75rem;
     padding: ${({ $messageOnly }) => {
-    return $messageOnly ? "0rem 0.84375rem 0.5625rem 0.84375rem" : "0.56rem 0.36rem"
+    return $messageOnly ? "0rem 0.625rem 0.375rem" : "0.375rem 0.625rem"
   }};
 
     border-radius: 0.625rem;
@@ -135,16 +135,16 @@ const MessageWrapper = styled.section`
   .user-name{
     color: var(--secondary-text-clr);
     font-family: Inter;
-    font-size: 0.625rem;
+    font-size: 0.525rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.76044rem; 
+    line-height: 1rem; 
   }
 
   .text{
     color: var(--primary-text-clr);
     font-family: Inter;
-    font-size: 0.95631rem;
+    font-size: 0.625rem;
     font-style: normal;
     font-weight: 500;
     /* line-height: 1.83756rem; */
@@ -153,10 +153,9 @@ const MessageWrapper = styled.section`
   .time{
     color: var(--secondary-text-clr);
     font-family: var(--primary-ff);
-    font-size: 0.625rem;
+    font-size: 0.525rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 1.38438rem;
   }
 
 `

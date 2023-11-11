@@ -2,7 +2,7 @@ import React from 'react'
 
 const MIMaximize = () => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={28} height={28} fill="none">
+    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} fill="none" viewBox='0 0 28 28'>
       <path
         stroke="#fff"
         strokeLinecap="round"

@@ -1,12 +1,12 @@
 
 function MILogo({ fillColor }) {
   return (
-    <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+    <svg width="54" height="54" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
       <mask id="mask0_48_1741" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="0" y="0" width="65" height="65">
         <rect width="65" height="65" fill="url(#pattern0)" />
       </mask>
       <g mask="url(#mask0_48_1741)">
-        <rect x="-52.4194" y="-37.7419" width="192.903" height="144.677" fill={fillColor ? fillColor : "#0060FF"} />
+        <rect x="-52.4194" y="-37.7419" width="192" height="144" fill={fillColor ? fillColor : "#0060FF"} />
       </g>
       <defs>
         <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">

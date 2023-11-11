@@ -3,9 +3,10 @@ const MIVideoCameraOn = ({ strokeColor, size }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={size ? size : 24}
-      height={size ? size : 24}
+      width={size ? size : 16}
+      height={size ? size : 16}
       fill="none"
+      viewBox="0 0 24 25"
     >
       <path
         stroke={strokeColor ? strokeColor : "#0060FF"}

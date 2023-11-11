@@ -11,7 +11,7 @@ const IconButton = ({ label, icon }) => {
 }
 
 const Wrapper = styled.button`
-  padding: 0.75rem 1.25rem;
+  padding: 0.5rem 0.875rem;
   border-radius: 3.8125rem;
   background: var(--secondary-clr);
 
@@ -21,10 +21,10 @@ const Wrapper = styled.button`
 
   color: var(--accent-blue-clr);
   font-family: Inter;
-  font-size: 0.875rem;
+  font-size: 0.6rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 1.375rem;
+  line-height: normal;
 `
 
 export default IconButton
