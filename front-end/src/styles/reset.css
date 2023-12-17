@@ -32,3 +32,12 @@ input {
   border: none;
   background-color: transparent;
 }
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}

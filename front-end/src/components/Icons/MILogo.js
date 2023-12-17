@@ -1,7 +1,7 @@
 
-function MILogo({ fillColor }) {
+function MILogo({ fillColor, size }) {
   return (
-    <svg width="54" height="54" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
+    <svg width={size || "54"} height={size || "54"} viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink">
       <mask id="mask0_48_1741" style={{ maskType: "alpha" }} maskUnits="userSpaceOnUse" x="0" y="0" width="65" height="65">
         <rect width="65" height="65" fill="url(#pattern0)" />
       </mask>

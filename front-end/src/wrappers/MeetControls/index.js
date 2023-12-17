@@ -37,11 +37,11 @@ const MeetControls = () => {
         mode="switch"
         control={true}
         on={{
-          icon: <MIMicOn strokeColor="var(--white)" />,
+          icon: <MIMicOn strokeColor="var(--white)" size={18} />,
           backgroundColor: "var(--accent-blue-clr)"
         }}
         off={{
-          icon: <MIMicOff strokeColor="var(--white)" />,
+          icon: <MIMicOff strokeColor="var(--white)" size={18} />,
           backgroundColor: "var(--accent-blue-clr)"
         }}
       />
@@ -52,11 +52,11 @@ const MeetControls = () => {
         mode="switch"
         control={true}
         on={{
-          icon: <MIVideoCameraOn strokeColor="var(--white)" />,
+          icon: <MIVideoCameraOn strokeColor="var(--white)" size={18} />,
           backgroundColor: "var(--accent-blue-clr)"
         }}
         off={{
-          icon: <MIVideoCameraOff strokeColor="var(--white)" />,
+          icon: <MIVideoCameraOff strokeColor="var(--white)" size={18} />,
           backgroundColor: "var(--accent-blue-clr)"
         }}
       />
@@ -67,11 +67,11 @@ const MeetControls = () => {
         mode="switch"
         control={true}
         on={{
-          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
         off={{
-          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIScreenShare strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
       />
@@ -82,11 +82,11 @@ const MeetControls = () => {
         mode="switch"
         control={true}
         on={{
-          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)" />,
+          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)" size={18} />,
           backgroundColor: "var(--accent-light-red-clr)"
         }}
         off={{
-          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)" />,
+          icon: <MIRecording strokeColor="var(--record-icon-stroke-clr)"size={18}  />,
           backgroundColor: "var(--accent-light-red-clr)"
         }}
       />
@@ -97,11 +97,11 @@ const MeetControls = () => {
         mode="switch"
         control={true}
         on={{
-          icon: <MIMessage strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIMessage strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
         off={{
-          icon: <MIMessage strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIMessage strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
       />
@@ -113,11 +113,11 @@ const MeetControls = () => {
         control={true}
         onClick={handleTheme}
         on={{
-          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
         off={{
-          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" />,
+          icon: <MIMenuEllipsis strokeColor="var(--accent-blue-clr)" size={18} />,
           backgroundColor: "var(--secondary-clr)"
         }}
       />
